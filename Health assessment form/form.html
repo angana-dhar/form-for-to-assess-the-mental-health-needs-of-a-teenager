@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <center>
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Health Assessment Form</title>
+
+      <style>
+        body {
+            color: black;
+            background-color: aqua;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+      </style>
+    </head>
+    <body><h2>Mental Health Assessment Form</h2>
+    <form action="/Health assessment form/form.html">
+                <div>
+                    <label for="fname">first name:</label>
+                   <input type="text" id="fname" name="fname" required>
+               </div>
+               <br>
+   
+               
+               <div>
+                   <label for="lname">last name:</label>
+                   <input type="text" id="lname" name="lname" required>
+               </div>
+               <br>
+               <div>
+                  
+                   <label for="Age">Age:</label>
+                   <input type="number" id="Age" name="Age" required>    
+               </div>
+               <br>
+
+               
+               <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+               </div>
+               <br>
+
+               <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+
+
+            <! --presenting concerns -->
+            <fieldset>
+                <legend>--presenting concerns--</legend>
+                <label for="concerns">Briefly describe your primary reason for seeking therapy:</label>
+                <br>
+                <textarea id="concerns" name="concerns" rows="10" cols="100" required></textarea><br><br>
+
+                 <h1>Check your symptoms</h1>
+                <label for="symptom1">depression</label>
+                <input type="checkbox" id="symptom1" value="depression">
+                <label for="symptom2">anxiety</label>
+                <input type="checkbox" id="symptom2" value="anxiety">
+                <label for="symptom1">mood swings</label>
+                <input type="checkbox" id="symptom3" value="mood swings">
+                <label for="symptom1">Intrusive thoughts</label>
+                <input type="checkbox" id="symptom4" value="Intrusive thoughts">
+                <label for="symptom1">Panic attacks</label>
+                <input type="checkbox" id="symptom5" value="Panic attacks">
+                <label for="symptom1">Irritability or Anger</label>
+                <input type="checkbox" id="symptom6" value="Irritability or Anger">
+                <label for="symptom1">Emotional Numbness</label>
+                <input type="checkbox" id="symptom7" value="Emotional Numbness">
+                <label for="symptom1">Suspiciousness</label>
+                <input type="checkbox" id="symptom8" value="Suspiciousness">
+                <label for="symptom1">Self-Harm or Suicidal Thoughts</label>
+                <input type="checkbox" id="symptom9" value="Self-Harm or Suicidal Thoughts">
+                <label for="symptom1">Memory Problems</label>
+                <input type="checkbox" id="symptom10" value="Memory Problems">
+
+            </fieldset>
+            </center>
+
+            <!--submission Button-->
+            <input type="submit" value="submit">
+           
+        </form>
+
+        <p>Click the "Submit" button and the form-data will be sent to a page on the 
+            server called "Health assessment form/form.html".</p>
+
+
+
+    </body>
+</html>
